@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TBTNetworkKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TBTNetworkKit.'
+  s.summary          = '网络请求二次封装 TBTNetworkKit.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/RainyofSun/TBTNetworkKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'RainyofSun' => '159322316lr@#' }
+  s.author           = { 'RainyofSun' => '807602063@qq.com' }
   s.source           = { :git => 'https://github.com/RainyofSun/TBTNetworkKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -36,7 +36,26 @@ TODO: Add long description of the pod here.
   #   'TBTNetworkKit' => ['TBTNetworkKit/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/TBTNetworkKit.h'
+   # ------------------- 文件分级 --------------------- #
+   s.subspec 'Cache' do [ss]
+    ss.source_files = 'TBTNetworkKit/Classes/Cache/*'
+    end
+   s.subspec 'Manager' do [ss]
+    ss.source_files = 'TBTNetworkKit/Classes/Manager/*'
+    ss.dependency 'TBTNetworkKit/Request'
+    ss.dependency 'TBTNetworkKit/Response'
+    end
+   s.subspec 'Request' do [ss]
+    ss.source_files = 'TBTNetworkKit/Classes/Request/*'
+    end
+   s.subspec 'Response' do [ss]
+    ss.source_files = 'TBTNetworkKit/Classes/Response/*'
+    ss.dependency 'TBTNetworkKit/Response'
+    ss.dependency 'TBTNetworkKit/Manager'
+    ss.dependency 'TBTNetworkKit/Cache'
+    end
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking', '=3.0'
+   s.dependency 'YYCache', '=1.0.4'
 end
