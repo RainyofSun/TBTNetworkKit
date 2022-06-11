@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TBTNetworkKit_Example' do
+  pod 'TBTNetworkKit', :path => '../'
+
+  target 'TBTNetworkKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
