@@ -38,18 +38,18 @@ TODO: Add long description of the pod here.
 
    s.public_header_files = 'Pod/Classes/TBTNetworkKit.h'
    # ------------------- 文件分级 --------------------- #
-   s.subspec 'Cache' do [ss]
+   s.subspec 'Cache' do |ss|
     ss.source_files = 'TBTNetworkKit/Classes/Cache/*'
     end
-   s.subspec 'Manager' do [ss]
+   s.subspec 'Manager' do |ss|
     ss.source_files = 'TBTNetworkKit/Classes/Manager/*'
     ss.dependency 'TBTNetworkKit/Request'
     ss.dependency 'TBTNetworkKit/Response'
     end
-   s.subspec 'Request' do [ss]
+   s.subspec 'Request' do |ss|
     ss.source_files = 'TBTNetworkKit/Classes/Request/*'
     end
-   s.subspec 'Response' do [ss]
+   s.subspec 'Response' do |ss|
     ss.source_files = 'TBTNetworkKit/Classes/Response/*'
     ss.dependency 'TBTNetworkKit/Response'
     ss.dependency 'TBTNetworkKit/Manager'
