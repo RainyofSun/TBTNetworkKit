@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = RainyofSun;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8HR7KN9336;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -498,6 +501,7 @@
 			baseConfigurationReference = 50C41E91735C90F14B32F4CC /* Pods-TBTNetworkKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8HR7KN9336;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBTNetworkKit/TBTNetworkKit-Prefix.pch";
 				INFOPLIST_FILE = "TBTNetworkKit/TBTNetworkKit-Info.plist";
@@ -514,6 +518,7 @@
 			baseConfigurationReference = 4142E61580DD3F9F50FADCA2 /* Pods-TBTNetworkKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8HR7KN9336;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBTNetworkKit/TBTNetworkKit-Prefix.pch";
 				INFOPLIST_FILE = "TBTNetworkKit/TBTNetworkKit-Info.plist";

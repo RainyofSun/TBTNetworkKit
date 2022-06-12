@@ -37,24 +37,24 @@ TODO: Add long description of the pod here.
   # }
 
    s.public_header_files = 'Pod/Classes/TBTNetworkKit.h'
-   # ------------------- 文件分级 --------------------- #
-   s.subspec 'Cache' do |ss|
-    ss.source_files = 'TBTNetworkKit/Classes/Cache/*'
-    end
-   s.subspec 'Manager' do |ss|
-    ss.source_files = 'TBTNetworkKit/Classes/Manager/*'
-    ss.dependency 'TBTNetworkKit/Request'
-    ss.dependency 'TBTNetworkKit/Response'
-    end
-   s.subspec 'Request' do |ss|
-    ss.source_files = 'TBTNetworkKit/Classes/Request/*'
-    end
-   s.subspec 'Response' do |ss|
-    ss.source_files = 'TBTNetworkKit/Classes/Response/*'
-    ss.dependency 'TBTNetworkKit/Response'
-    ss.dependency 'TBTNetworkKit/Manager'
-    ss.dependency 'TBTNetworkKit/Cache'
-    end
+#   # ------------------- 文件分级 --------------------- #
+#   s.subspec 'Cache' do |ss|
+#    ss.source_files = 'TBTNetworkKit/Classes/Cache/*.{h,m}'
+#    end
+#   s.subspec 'Manager' do |ss|
+#    ss.source_files = 'TBTNetworkKit/Classes/Manager/*.{h,m}'
+#    ss.dependency 'TBTNetworkKit/Request'
+#    ss.dependency 'TBTNetworkKit/Response'
+#    end
+#   s.subspec 'Request' do |ss|
+#    ss.source_files = 'TBTNetworkKit/Classes/Request/*.{h,m}'
+##    ss.dependency 'TBTNetworkKit/Response'
+##    ss.dependency 'TBTNetworkKit/Manager'
+##    ss.dependency 'TBTNetworkKit/Cache'
+#    end
+#   s.subspec 'Response' do |ss|
+#    ss.source_files = 'TBTNetworkKit/Classes/Response/*.{h,m}'
+#    end
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'AFNetworking', '=3.0'
    s.dependency 'YYCache', '=1.0.4'
