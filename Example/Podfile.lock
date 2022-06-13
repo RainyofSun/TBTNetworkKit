@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.0)
   - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
-  - TBTNetworkKit (0.1.0):
+  - TBTNetworkKit (0.1.1):
     - AFNetworking (= 3.0)
     - YYCache (= 1.0.4)
   - YYCache (1.0.4)
@@ -33,9 +33,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
-  TBTNetworkKit: 7af91c8141241c248346446c4b82cecfd8eb0fa3
+  TBTNetworkKit: 86f44e1627d7bc4732039c0dc34a4ebe514e611a
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: c991f2bda2157999e24545fa7ce4dc9769f7cb55
+PODFILE CHECKSUM: 5c029448e38aaacbf9a2cf1cf1fcf95e43ecf0a8
 
 COCOAPODS: 1.11.3

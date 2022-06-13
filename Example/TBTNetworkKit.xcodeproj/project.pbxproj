@@ -24,6 +24,7 @@
 		7DAA2117F45C85C925D79118 /* Pods_TBTNetworkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545457A1F3D00C99F504D8CC /* Pods_TBTNetworkKit_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BAFDA018FF1F81CA26698097 /* Pods_TBTNetworkKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7CEEBB183195E0295CE4E3 /* Pods_TBTNetworkKit_Tests.framework */; };
+		C8A712612856DD2100DB1AD3 /* TBTDefaultServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A7125F2856DD2100DB1AD3 /* TBTDefaultServerRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAB67E9AF6B2F69ED0BA7837 /* Pods-TBTNetworkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBTNetworkKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-TBTNetworkKit_Tests/Pods-TBTNetworkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C8A7125F2856DD2100DB1AD3 /* TBTDefaultServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTDefaultServerRequest.m; sourceTree = "<group>"; };
+		C8A712602856DD2100DB1AD3 /* TBTDefaultServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTDefaultServerRequest.h; sourceTree = "<group>"; };
 		D6A987CEFED38C2B636AF98A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E78CD2171AC2FE9B76EC172A /* Pods-TBTNetworkKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBTNetworkKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TBTNetworkKit_Tests/Pods-TBTNetworkKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8C111ED2C7F988764BE4B85 /* TBTNetworkKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TBTNetworkKit.podspec; path = ../TBTNetworkKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -143,6 +146,7 @@
 		6003F593195388D20070C39A /* Example for TBTNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
+				C8A7125E2856DD2100DB1AD3 /* Network */,
 				6003F59C195388D20070C39A /* TBTAppDelegate.h */,
 				6003F59D195388D20070C39A /* TBTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +198,15 @@
 				D6A987CEFED38C2B636AF98A /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C8A7125E2856DD2100DB1AD3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C8A712602856DD2100DB1AD3 /* TBTDefaultServerRequest.h */,
+				C8A7125F2856DD2100DB1AD3 /* TBTDefaultServerRequest.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +387,7 @@
 				6003F59E195388D20070C39A /* TBTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TBTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C8A712612856DD2100DB1AD3 /* TBTDefaultServerRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
